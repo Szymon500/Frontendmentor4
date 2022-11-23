@@ -12,7 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/53dc7df5e2.js" crossorigin="anonymous"></script>
   <script src="js/script.js" defer></script>
 
 </head>
@@ -51,36 +53,122 @@
   <main>
     <section class="manage">
       <div class="wrapper">
-        <div class="manage__header">
-          <h2 class="head">What’s different about Manage?</h2>
-          <p class="head-text">Manage provides all the functionality your team needs, without the complexity. Our
-            software
-            is tailor-made for modern digital
-            product teams.</p>
+        <div class="manage__container">
+          <div class="manage__header">
+            <h2 class="head">What’s different about Manage?</h2>
+            <p class="head-text">Manage provides all the functionality your team needs, without the complexity. Our
+              software
+              is tailor-made for modern digital
+              product teams.</p>
+          </div>
+          <div class="manage__box">
+            <div class="manage__item">
+              <p class="manage__item-header"><span>01</span>Track company-wide progress</p>
+              <p class="manage__item-text">
+                See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone
+                level
+                all the way done to the smallest of details. Never lose sight of the bigger picture
+                again.</p>
+            </div>
+            <div class="manage__item">
+              <p class="manage__item-header"><span>02</span>Advanced built-in reports</p>
+              <p class="manage__item-text">
+                Set internal delivery estimates and track progress toward company
+                goals. Our customisable dashboard helps you build out the reports
+                you need to keep key stakeholders informed.</p>
+            </div>
+            <div class="manage__item">
+              <p class="manage__item-header"><span>03</span>Everything you need in one place</p>
+              <p class="manage__item-text">
+                Stop jumping from one service to another to communicate, store files,
+                track tasks and share documents. Manage offers an all-in-one team
+                productivity solution.</p>
+            </div>
+          </div>
         </div>
-        <div class="manage__item">
-          <p class="manage__item-header"><span>01</span>Track company-wide progress</p>
-          <p class="manage__item-text">
-            See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level
-            all the way done to the smallest of details. Never lose sight of the bigger picture
-            again.</p>
+      </div>
+      <img src="images/bg-tablet-pattern.svg" alt="" class="manage__img">
+    </section>
+    <section class="opinions">
+      <div class="wrapper">
+        <div class="opinions__header">
+          <h2 class="head">What they’ve said</h2>
         </div>
-        <div class="manage__item">
-          <p class="manage__item-header"><span>02</span>Advanced built-in reports</p>
-          <p class="manage__item-text">
-            Set internal delivery estimates and track progress toward company
-            goals. Our customisable dashboard helps you build out the reports
-            you need to keep key stakeholders informed.</p>
+        <div class="opinions__box">
+          <div class="opinions__box-item">
+            <img src="./images/avatar-ali.png" alt="Ali Bravo image" class="opinions__box-item-img">
+            <p class="opinions__box-item-name">Ali Bravo</p>
+            <p class="opinions__box-item-text">“We have been able to cancel so many other subscriptions since using
+              Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+          </div>
+          <div class="opinions__box-item">
+            <img src="./images/avatar-anisha.png" alt="Anisha Li image" class="opinions__box-item-img">
+            <p class="opinions__box-item-name">Anisha Li</p>
+            <p class="opinions__box-item-text">“Manage has supercharged our team’s workflow. The ability to maintain
+              visibility on larger milestones at all times keeps everyone motivated.”</p>
+          </div>
+          <div class="opinions__box-item">
+            <img src="./images/avatar-richard.png" alt="Richard Watts image" class="opinions__box-item-img">
+            <p class="opinions__box-item-name">Richard Watts</p>
+            <p class="opinions__box-item-text">“Manage allows us to provide structure and process. It keeps us organized
+              and focused. I can’t stop recommending them to everyone I talk to!”</p>
+          </div>
+          <div class="opinions__box-item">
+            <img src="./images/avatar-shanai.png" alt="Shanai Gougho image" class="opinions__box-item-img">
+            <p class="opinions__box-item-name">Shanai Gougho</p>
+            <p class="opinions__box-item-text">“Their software allows us to track, manage and collaborate on our
+              projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+          </div>
         </div>
-        <div class="manage__item">
-          <p class="manage__item-header"><span>03</span>Everything you need in one place</p>
-          <p class="manage__item-text">
-            Stop jumping from one service to another to communicate, store files,
-            track tasks and share documents. Manage offers an all-in-one team
-            productivity solution.</p>
+        <div class="opinions__btn">
+          <button class="btn">Get Started</button>
         </div>
       </div>
     </section>
+    <section class="banner">
+      <div class="wrapper">
+        <div class="banner__box">
+          <p class="banner__box-header">Simplify how your team works today.</p>
+          <button class="btn btn--white">Get Started</button>
+        </div>
+      </div>
+      <img class="banner__box-img" src="./images/bg-tablet-pattern.svg" alt="">
+    </section>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__box">
+          <div class="footer__input">
+            <input type="text" placeholder="Updates in your inbox...">
+            <button class="btn">go</button>
+          </div>
+          <div class="footer__nav">
+            <ul class="footer__nav-ul">
+              <li class="footer__nav-ul-item"><a href="#">Home</a></li>
+              <li class="footer__nav-ul-item"><a href="#">Pricing</a></li>
+              <li class="footer__nav-ul-item"><a href="#">Products</a></li>
+              <li class="footer__nav-ul-item"><a href="#">About Us</a></li>
+              <li class="footer__nav-ul-item"><a href="#">Carrers</a></li>
+              <li class="footer__nav-ul-item"><a href="#">Community</a></li>
+              <li class="footer__nav-ul-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer__socials">
+            <div class="footer__socials-items">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <img src="images/logo-white.svg" alt="Logo company manage" class="footer__socials-logo">
+          </div>
+          <p class="footer__copiright">
+            Copiright <span class="footer__span">2022</span>, All Rights Reserved
+          </p>
+        </div>
+
+      </div>
+    </footer>
   </main>
 
 
@@ -88,47 +176,15 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/slick.js"></script>
+  <script src="js/slick-use.js"></script>
 </body>
 
 </html>
 
-<!-- Pricing
-  
-
-  
-
-  
-  Advanced built-in reports
-  Set internal delivery estimates and track progress toward company 
-  goals. Our customisable dashboard helps you build out the reports 
-  you need to keep key stakeholders informed.
-
-  03
-  Everything you need in one place
-  Stop jumping from one service to another to communicate, store files, 
-  track tasks and share documents. Manage offers an all-in-one team 
-  productivity solution.
-
-  What they’ve said
-
-  Anisha Li
-  “Manage has supercharged our team’s workflow. The ability to maintain 
-  visibility on larger milestones at all times keeps everyone motivated.”
-
-  Ali Bravo
-  “We have been able to cancel so many other subscriptions since using 
-  Manage. There is no more cross-channel confusion and everyone is much 
-  more focused.”
-
-  Richard Watts
-  “Manage allows us to provide structure and process. It keeps us organized 
-  and focused. I can’t stop recommending them to everyone I talk to!”
-
-  Shanai Gough
-  “Their software allows us to track, manage and collaborate on our projects 
-  from anywhere. It keeps the whole team in-sync without being intrusive.”
-
-  Get Started
+<!--
 
   Simplify how your team works today.
   Get Started
