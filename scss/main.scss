@@ -145,9 +145,26 @@ li.slick-active {
 		border-radius: 8px;
 		box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
 		opacity: 0;
+		overflow: hidden;
 		&-item {
 			list-style: none;
 			padding: 0.5em;
+			transform: translateX(200px);
+			&:nth-child(1){
+				animation-delay: .1s;
+			}
+			&:nth-child(2){
+				animation-delay: .2s;
+			}
+			&:nth-child(3){
+				animation-delay: .3s;
+			}
+			&:nth-child(4){
+				animation-delay: .4s;
+			}
+			&:nth-child(5){
+				animation-delay: .5s;
+			}
 			a {
 				text-decoration: none;
 				color: $dark-blue;
@@ -157,6 +174,18 @@ li.slick-active {
 			color: rgba(0, 0, 0, 0.3);
 		}
 	}
+}
+.animate-nav-item{
+	animation: navAnimation .5s forwards;
+}
+@keyframes navAnimation {
+	from{
+		transform: translateX(200px);
+	}
+	to{
+		transform: translateX(0px);
+	}
+	
 }
 .show {
 	display: block;
@@ -321,12 +350,21 @@ li.slick-active {
 		padding: 3em 2em;
 	}
 	&__input {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
 		margin-bottom: 3em;
+		width: 100%;
+		&-error{
+			font-size: 1.3rem;
+			color: $red;
+			margin-top: 1em;
+			visibility: hidden;
+		}
 		input {
 			padding: 1em 1.5em;
 			border: 1px solid transparent;
 			border-radius: 30px;
-			margin-right: 1em;
 			width: 22rem;
 		}
 		.btn {
@@ -404,6 +442,9 @@ li.slick-active {
 			transform: translate(0, 0);
 			justify-content: flex-end;
 			padding: 0;
+			&-item{
+				transform: translateX(0);
+			}
 		}
 	}
 	.header {
@@ -461,6 +502,15 @@ li.slick-active {
 				margin-bottom: 4em;
 			}
 		}
+	}
+	.footer{
+		&__input{
+			width: 50%;
+			input{
+				width: 30rem;
+			}
+		}
+
 	}
 }
 @media (min-width: 976px) {
@@ -549,7 +599,10 @@ li.slick-active {
 	.banner__box{
 		flex-direction: row;
 		justify-content: space-between;
-		padding: 10em 6em;
+		padding: 12em 6em;
+		&-header{
+			margin-bottom: 0;
+		}
 	}
 	.footer{
 		padding: 3em 4em;
@@ -562,6 +615,11 @@ li.slick-active {
 		}
 		&__input{
 			order:3;
+			justify-content: flex-end;
+			input{
+				margin-right: 3em;
+				height: 54px;
+			}
 			
 		}
 		&__nav{

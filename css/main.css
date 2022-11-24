@@ -157,10 +157,32 @@ li.slick-active {
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   opacity: 0;
+  overflow: hidden;
 }
 .nav__box-item {
   list-style: none;
   padding: 0.5em;
+  transform: translateX(200px);
+}
+.nav__box-item:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.nav__box-item:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.nav__box-item:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.nav__box-item:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.nav__box-item:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 .nav__box-item a {
   text-decoration: none;
@@ -170,6 +192,28 @@ li.slick-active {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.animate-nav-item {
+  -webkit-animation: navAnimation 0.5s forwards;
+          animation: navAnimation 0.5s forwards;
+}
+
+@-webkit-keyframes navAnimation {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes navAnimation {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
 .show {
   display: block;
 }
@@ -350,13 +394,22 @@ li.slick-active {
   padding: 3em 2em;
 }
 .footer__input {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 3em;
+  width: 100%;
+}
+.footer__input-error {
+  font-size: 1.3rem;
+  color: hsl(12deg, 88%, 59%);
+  margin-top: 1em;
+  visibility: hidden;
 }
 .footer__input input {
   padding: 1em 1.5em;
   border: 1px solid transparent;
   border-radius: 30px;
-  margin-right: 1em;
   width: 22rem;
 }
 .footer__input .btn {
@@ -435,6 +488,9 @@ li.slick-active {
     justify-content: flex-end;
     padding: 0;
   }
+  .nav__box-item {
+    transform: translateX(0);
+  }
   .header__main-img {
     width: 90%;
   }
@@ -484,6 +540,12 @@ li.slick-active {
     line-height: 30px;
     margin-top: 2em;
     margin-bottom: 4em;
+  }
+  .footer__input {
+    width: 50%;
+  }
+  .footer__input input {
+    width: 30rem;
   }
 }
 @media (min-width: 976px) {
@@ -568,7 +630,10 @@ li.slick-active {
   .banner__box {
     flex-direction: row;
     justify-content: space-between;
-    padding: 10em 6em;
+    padding: 12em 6em;
+  }
+  .banner__box-header {
+    margin-bottom: 0;
   }
   .footer {
     padding: 3em 4em;
@@ -582,6 +647,11 @@ li.slick-active {
   }
   .footer__input {
     order: 3;
+    justify-content: flex-end;
+  }
+  .footer__input input {
+    margin-right: 3em;
+    height: 54px;
   }
   .footer__nav {
     order: 2;
